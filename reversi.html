@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reversi Game</title>
+    <link rel="stylesheet" href="reversi.css">
+</head>
+<body>
+    <div id="game">
+        <h1>Reversi Game</h1>
+        <div id="mode-selection">
+            <label for="mode">Game Mode:</label>
+            <select id="mode">
+                <option value="select-mode">Select Mode</option>
+                <option value="two-player">Two Player</option>
+                <option value="single-player">Single Player</option>
+                <option value="ai-vs-ai">AI vs AI</option>
+            </select>
+            <div id="difficulty-selection" style="display: none;">
+                <label for="difficulty">Difficulty:</label>
+                <select id="difficulty">
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+            </div>
+        </div>
+        <div id="board" class="board"></div>
+        <div id="controls">
+            <button id="new-game">New Game</button>
+            <button id="save-game">Save Game</button>
+            <button id="load-game">Load Game</button>
+        </div>
+        <div id="score">
+            <span id="black-score">Black: 0</span>
+            <span id="white-score">White: 0</span>
+        </div>
+        <div id="turn-indicator">Current Turn: <span id="current-turn">Black</span></div>
+    </div>
+    <script src="reversi.js"></script>
+</body>
+</html>
